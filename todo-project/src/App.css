@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+/* Page Wrapper */
+
+.wrapper {
+  background-color: rgb(234, 26, 61);
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.TodoWrapper a {
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.TodoWrapper a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Todo Wrapper */
+
+.TodoWrapper {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+}
+
+.TodoWrapper h1 {
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Todo Input and Button*/
+
+.todo-input {
+  margin-bottom: 0.5;
+  margin-top: 0.5rem;
+  padding: 11px 20px 11px 20px;
+}
+
+.todo-input,
+.todo-btn  {
+ border: none;
+}
+
+.todo-btn {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px 12px 15px;
+}
+
+.todo-input:focus {
+  outline: 0.1px black solid;
+}
+
+/* Todo List Design */
+
+.Todo {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.Todo p {
+  color: #fff;
+  cursor: pointer;
+  padding-left: 12px;
+}
+
+.Todo p,
+.Todo div {
+  background-color: #000;
+  padding: 6px 10px 5px 10px;
+  min-width: 150px;
+}
+
+.Todo div {
+  padding-right: 0;
+}
+
+.Todo div img {
+  background-color: #fff;
+  border: 0 solid rgba(1, 11, 16, 0.5); 
+  border-radius: 4px;
+  cursor: pointer;
+  height: 20px;
+  margin-left: 5px;
+  padding: 3px;
+  width: 20px; 
+}
+
+.Todo .completed {
+  text-decoration: line-through;
+}
+
+/* Responsive Design */
+
+@media screen and (min-width: 768px) {
+
+  /* Todo List*/
+
+  .Todo p,
+  .Todo div {
+    font-size: 18px;
+    max-width: 700px;
+    min-width: 300px;
+  }
+
+  .Todo div img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .todo-input {
+    padding: 11px 50px 11px 40px;
+  }
+
+
+  .todo-btn {
+    padding: 12px 25px 12px 25px;
+  }
+}
